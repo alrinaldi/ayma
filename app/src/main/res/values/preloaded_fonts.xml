@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abril_fatface</item>
+        <item>@font/fanwood_text</item>
+        <item>@font/finger_paint</item>
+        <item>@font/knewave</item>
+        <item>@font/ledger</item>
+        <item>@font/rochester</item>
+    </array>
+</resources>

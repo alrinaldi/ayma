@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aoma">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"></uses-feature>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="18"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:configChanges="orientation|screenSize"
+
+        android:usesCleartextTraffic="true">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.aoma.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"
+                    />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DashboardActivity"
+
+        android:label="AOMA"></activity>
+
+        <activity android:name=".ViewResultActivity"
+
+            android:label="AOMA"></activity>
+
+        <activity android:name=".MasterDataActivity"
+
+            android:label="AOMA"></activity>
+
+        <activity android:name=".QrActivity"
+
+            android:label="AOMA"></activity>
+
+        <activity android:name=".SettingActivity"
+
+            android:label="AOMA"></activity>
+        <activity android:name=".ScanCodeActivity"
+
+            android:label="AOMA"></activity>
+
+        <activity android:name=".UpdateAssetActivity"
+
+            android:label="AOMA"></activity>
+
+        <activity android:name=".EducationMenu"
+
+            android:label="AOMA"></activity>
+
+        <activity android:name=".IkView"
+
+            android:label="AOMA"></activity>
+
+        <activity android:name=".SkdView"
+
+            android:label="AOMA"></activity>
+
+        <activity android:name=".PsrView"
+
+            android:label="AOMA"></activity>
+
+        <activity android:name=".ProfileScan"
+
+            android:label="AOMA"></activity>
+
+        <activity android:name=".ProfileRead"
+
+            android:label="AOMA"></activity>
+
+        <activity android:name=".ScanCodePActivity"
+
+            android:label="AOMA"></activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

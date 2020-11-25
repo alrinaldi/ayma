@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.aoma.LoginActivity">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true">
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/knewave"
+            android:text="WELCOME"
+            android:textColor="@color/black"
+            android:textSize="60dip" />
+
+        <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="Asset Opname Mobile Apps"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/myPict"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/beranda" />
+
+        <EditText
+            android:id="@+id/nrp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:hint="NRP"
+            android:inputType=""
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:hint="Password"
+            android:password="true"
+            android:singleLine="true" />
+
+        <cyd.awesome.material.AwesomeText
+            android:id="@+id/ImgShowPassword"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="-45dp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            app:awesome_font="material_design"
+            app:awesome_icon="MD_VISIBILITY_OFF" />
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="430dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="15dp"
+            android:text="Login"
+            android:background="#000066"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/logoymi" />
+
+    </LinearLayout>
+        </ScrollView>
+
+
+</RelativeLayout>
